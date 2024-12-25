@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #222;
+    /* Black background */
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #111;
+    /* Darker grey */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: grey;
+    /* Grey text */
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.about,
+.projects,
+.contact {
+    padding: 60px 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.about.fade-in,
+.projects.fade-in,
+.contact.fade-in {
+    opacity: 1;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: grey;
+    /* Theme Color */
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    color: grey;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+    /* Hover color */
+}
+
+.horizontal-projects {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.horizontal-project {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 30%;
+}
+
+.horizontal-project:hover {
+    transform: translateY(-10px);
+}
+
+.horizontal-project video {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.horizontal-project h3 {
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #111;
+    color: grey;
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.linkedin {
+    background-color: #000000;
+}
+
+.freelancer {
+    background-color: #000000;
+}
+
+.email {
+    background-color: #000000;
+}
+
+.instagram {
+    background-color: #000000;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: #555;
+    /* Change this to a darker shade if needed */
+}
